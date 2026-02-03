@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Portfolio | Modern Minimalist</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #000000; /* Deep Black */
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 2rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #00ff88; /* Accent Color */
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10%;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: #00ff88;
+        }
+
+        /* Project Grid */
+        .container {
+            padding: 100px 10%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: #111;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid #222;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #00ff88;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 1rem 2rem;
+            background: #00ff88;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #fff;
+            box-shadow: 0 0 20px #00ff88;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PORTFOLIO.</div>
+        <div class="links">
+            <a href="#work" style="color: white; text-decoration: none;">Work</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1 data-aos="fade-up" data-aos-duration="1000">Creative <span class="highlight">Developer</span></h1>
+        <p data-aos="fade-up" data-aos-delay="200" style="font-size: 1.2rem; color: #888; margin-bottom: 2rem;">
+            Building digital experiences that matter.
+        </p>
+        <div data-aos="zoom-in" data-aos-delay="400">
+            <a href="#work" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <section id="work" class="container">
+        <h2 data-aos="fade-right">Selected Projects</h2>
+        <div class="grid">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <h3 style="color: #00ff88;">Project Alpha</h3>
+                <p>A high-performance web application built with modern tech.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <h3 style="color: #00ff88;">Project Beta</h3>
+                <p>E-commerce solution with seamless UX and dark mode.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <h3 style="color: #00ff88;">Project Gamma</h3>
+                <p>Interactive data visualization dashboard.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Your Name. Stay Inspired.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Animation happens only once while scrolling down
+            mirror: false
+        });
+    </script>
+</body>
+</html>
